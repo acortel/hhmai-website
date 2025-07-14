@@ -1,5 +1,5 @@
-import React from 'react';
-import { Star, Quote } from 'lucide-react';
+import React, { useRef } from 'react';
+import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ParentsReviews = () => {
   const reviews = [
@@ -47,6 +47,19 @@ const ParentsReviews = () => {
     },
   ];
 
+  const scrollRef = useRef(null);
+
+  const scrollByAmount = 320; // px, roughly the width of one card + gap
+
+  const handleScroll = (direction) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollByAmount : scrollByAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   const renderStars = (rating) => {
     return Array.from({ length: 5 }, (_, index) => (
       <Star
@@ -70,9 +83,23 @@ const ParentsReviews = () => {
           </p>
         </div>
 
-        {/* Scrollable Reviews Container */}
-        <div className="relative">
-          <div className="flex overflow-x-auto pb-6 space-x-6 scrollbar-hide">
+        {/* Scrollable Reviews Container with Arrows */}
+        <div className="relative min-w-0">
+          {/* Left Arrow */}
+          <button
+            type="button"
+            aria-label="Scroll left"
+            onClick={() => handleScroll('left')}
+            className="hidden md:flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white bg-opacity-80 hover:bg-opacity-100 shadow-md rounded-full w-10 h-10 border border-gray-200 transition-colors"
+          >
+            <ChevronLeft className="w-6 h-6 text-blue-600" />
+          </button>
+
+          {/* Scrollable Flex Container */}
+          <div
+            ref={scrollRef}
+            className="flex overflow-x-auto pb-6 space-x-6 scrollbar-hide w-full"
+          >
             {reviews.map((review, index) => (
               <div
                 key={index}
@@ -109,6 +136,16 @@ const ParentsReviews = () => {
             ))}
           </div>
 
+          {/* Right Arrow */}
+          <button
+            type="button"
+            aria-label="Scroll right"
+            onClick={() => handleScroll('right')}
+            className="hidden md:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white bg-opacity-80 hover:bg-opacity-100 shadow-md rounded-full w-10 h-10 border border-gray-200 transition-colors"
+          >
+            <ChevronRight className="w-6 h-6 text-blue-600" />
+          </button>
+
           {/* Scroll Indicators */}
           <div className="flex justify-center mt-6 space-x-2">
             {reviews.map((_, index) => (
@@ -130,16 +167,6 @@ const ParentsReviews = () => {
           </button>
         </div>
       </div>
-
-      <style jsx>{`
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-      `}</style>
     </section>
   );
 };
