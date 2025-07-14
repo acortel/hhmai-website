@@ -18,9 +18,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo and School Name */}
           <div className="flex items-center space-x-3">
-            <div className="bg-blue-600 p-2 rounded-lg">
-              <GraduationCap className="h-6 w-6 text-white" />
-            </div>
+            <img src="/hhmai-logo.png" alt="HHMAI Logo" className="h-16 w-16" />
             <div>
               <h1 className="text-xl font-fredoka-one text-gray-800">Harmony Heights Montessori Academy, Inc.</h1>
             </div>

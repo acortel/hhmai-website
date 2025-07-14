@@ -23,32 +23,6 @@ const Footer = () => {
               Committed to nurturing young minds and building character through exceptional 
               Montessori education, innovative programs, and a supportive community environment.
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-800 hover:bg-blue-600 p-3 rounded-lg transition-colors duration-200"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="https://messenger.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-800 hover:bg-blue-500 p-3 rounded-lg transition-colors duration-200"
-              >
-                <MessageCircle className="h-5 w-5" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-800 hover:bg-blue-700 p-3 rounded-lg transition-colors duration-200"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -75,17 +49,21 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-gray-400" />
                 <span className="font-fredoka text-gray-300 text-sm">
-                  123 Education Street<br />
-                  Learning City, LC 12345
+                  R. Kangleon St., Mambajao (Pob.), <br />
+                  Maasin City, Southern Leyte
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-gray-400" />
-                <span className="font-fredoka text-gray-300 text-sm">(555) 123-4567</span>
+                <span className="font-fredoka text-gray-300 text-sm">0992 623 7997 / 0930 273 8651 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-gray-400" />
-                <span className="font-fredoka text-gray-300 text-sm">info@harmonyheightsmontessori.edu</span>
+                <span className="font-fredoka text-gray-300 text-sm">harmonyheightsmontessori@gmail.com</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Facebook className="h-5 w-5 text-gray-400" />
+                <span className="font-fredoka text-gray-300 text-sm">Harmony Heights Montessori Academy, Inc.</span>
               </div>
             </div>
           </div>
@@ -97,17 +75,6 @@ const Footer = () => {
             <p className="font-fredoka text-gray-400 text-sm">
               © {currentYear} Harmony Heights Montessori Academy, Inc. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#privacy" className="font-fredoka text-gray-400 hover:text-white text-sm transition-colors duration-200">
-                Privacy Policy
-              </a>
-              <a href="#terms" className="font-fredoka text-gray-400 hover:text-white text-sm transition-colors duration-200">
-                Terms of Service
-              </a>
-              <a href="#accessibility" className="font-fredoka text-gray-400 hover:text-white text-sm transition-colors duration-200">
-                Accessibility
-              </a>
-            </div>
           </div>
         </div>
       </div>

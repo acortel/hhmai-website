@@ -4,46 +4,34 @@ import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 const ParentsReviews = () => {
   const reviews = [
     {
-      name: 'Sarah Mitchell',
-      role: 'Parent of Emma (Grade 8)',
+      name: 'Mrs. Nikilyn Espina',
       rating: 5,
-      review: 'Harmony Heights Montessori Academy has exceeded our expectations in every way. The teachers are incredibly dedicated, and my daughter has grown both academically and personally. The school truly cares about each student\'s individual success.',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2',
+      review: "I would love to share my wonderful experience with my son's summer playgroup class. The teachers are always smiling, positive, patient, and friendly. Their approach to teaching and interacting with the kids is commendable. I particularly appreciate the teacher sending me updates with pictures and videos of my son's activities at school. It's wonderful to see his progress and joy throughout the day.",
     },
     {
-      name: 'Michael Rodriguez',
-      role: 'Parent of Alex (Grade 10)',
+      name: 'Mrs. Jheelyn P. Dator',
       rating: 5,
-      review: 'The academic programs are outstanding, and the extracurricular activities have helped my son discover his passion for robotics. The communication between teachers and parents is excellent.',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2',
+      review: "I am so very thankful to Harmony Heights Montessori Academy Inc. for offering this summer program. It was a great venue for my daughter to learn and developed her reading and writing skills. Truly all the teachers are so kind and accommodating they let my daughter experienced not just only becoming a student but also a teacher as well. Keep it up and God speed!",
     },
     {
-      name: 'Jennifer Chen',
-      role: 'Parent of Lily (Grade 6)',
+      name: 'Mrs. Roselle D. Timkang',
       rating: 5,
-      review: 'Moving to Harmony Heights Montessori Academy was the best decision we made for our daughter. The supportive Montessori environment and innovative teaching methods have made learning enjoyable and engaging.',
-      image: 'https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2',
+      review: "We are very much satisfied, his development is very good. It helps to improve his reading skills. He is learning a lot of new things daily and communicating to us very well. We appreciate the efforts of the teacher for putting such effort to our kids.",
     },
     {
-      name: 'David Thompson',
-      role: 'Parent of Marcus (Grade 12)',
+      name: 'Mrs. Divine Grace Refuelo',
       rating: 5,
-      review: 'The Montessori approach has been exceptional for our son. He received personalized guidance and developed strong independence and critical thinking skills. Thank you, Harmony Heights!',
-      image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2',
+      review: "My child has made notable progress in her reading and writing skills during the summer class. She can now read two to three letters in just a month. I was particularly impressed with the variety of activities that kept the children engaged and excited to learn. My child's learning would not have improved without Teacher Rui's patience and excellent teaching. For that, I am especially grateful.",
     },
     {
-      name: 'Lisa Anderson',
-      role: 'Parent of Sophie (Grade 9)',
+      name: 'Mrs. Crisbe Sanchez Elorcha',
       rating: 5,
-      review: 'The teachers at Harmony Heights Montessori Academy go above and beyond. They recognize each child\'s unique strengths and provide the Montessori support needed to help them thrive. We couldn\'t be happier.',
-      image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2',
+      review: "I'm so thankful that I enrolled KC at Harmony Heights Montessori summer class because there's real development. She can also identify some pictures and parts of the body. She also makes friends. Even in just an hour of sumer class, she's active and she enjoys her time doing the activities.",
     },
     {
-      name: 'Robert Kim',
-      role: 'Parent of Daniel (Grade 7)',
+      name: 'Mrs. Wencel Marie Laroa',
       rating: 5,
-      review: 'The school\'s commitment to character development alongside academic excellence is remarkable. My son has become more confident and responsible since joining Harmony Heights Montessori Academy.',
-      image: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2',
+      review: "Thank you for enhancing our children's reading skills in just a short span of time. Your patience and dedication have made a significant impact, we are truly grateful for your efforts. ",
     },
   ];
 
@@ -124,13 +112,7 @@ const ParentsReviews = () => {
 
                 {/* Parent Info */}
                 <div className="flex flex-col items-center">
-                  <img
-                    src={review.image}
-                    alt={review.name}
-                    className="w-16 h-16 rounded-full object-cover mb-3"
-                  />
                   <h4 className="font-fredoka font-semibold text-gray-800 text-center">{review.name}</h4>
-                  <p className="text-sm font-fredoka text-gray-600 text-center">{review.role}</p>
                 </div>
               </div>
             ))}
