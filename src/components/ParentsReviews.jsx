@@ -138,16 +138,6 @@ const ParentsReviews = () => {
             ))}
           </div>
         </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-12">
-          <p className="text-lg font-fredoka text-gray-600 mb-6">
-            Join our community of satisfied families
-          </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-fredoka font-semibold transition-colors duration-200">
-            Schedule a Visit
-          </button>
-        </div>
       </div>
     </section>
   );

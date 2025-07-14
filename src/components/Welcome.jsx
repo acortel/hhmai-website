@@ -11,7 +11,7 @@ const Welcome = () => {
               Welcome to Harmony Heights Montessori Academy, Inc.
             </h2>
             <p className="text-lg font-fredoka text-gray-600 mb-6 leading-relaxed">
-              For over 50 years, Harmony Heights Montessori Academy has been committed to providing exceptional 
+              Harmony Heights Montessori Academy has been committed to providing exceptional 
               Montessori education that nurtures young minds and builds character. Our dedicated faculty 
               and innovative Montessori programs create an environment where students thrive academically, 
               socially, and personally.
@@ -32,10 +32,6 @@ const Welcome = () => {
               alt="Students in classroom"
               className="rounded-2xl shadow-2xl"
             />
-            <div className="absolute -bottom-6 -left-6 bg-blue-600 text-white p-6 rounded-xl shadow-lg">
-              <p className="text-2xl font-fredoka-one">Est. 1973</p>
-              <p className="text-sm font-fredoka">50+ Years of Excellence</p>
-            </div>
           </div>
         </div>
       </div>

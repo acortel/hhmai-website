@@ -1,5 +1,5 @@
 import React from 'react';
-import { Baby, Users, BookOpen } from 'lucide-react';
+import { Baby, Users, BookOpen, Book, CalendarDays } from 'lucide-react';
 
 const Academics = () => {
   const programs = [
@@ -21,6 +21,18 @@ const Academics = () => {
       description: 'Primary education focusing on fundamental reading, writing, and mathematics skills while fostering curiosity and love for learning.',
       color: 'bg-green-500',
     },
+    {
+      icon: Book,
+      title: 'Tutorial Classes',
+      description: 'Personalized academic support tailored to each student’s needs, helping them master challenging subjects and build confidence in their learning journey.',
+      color: 'bg-yellow-500',
+    },
+    {
+      icon: CalendarDays,
+      title: 'Saturday Classes',
+      description: 'Enriching weekend programs including Taekwondo, Violin, Dance Sports, Piano Class, Visual Arts, Voice Lessons, Ballet Class, Guitar Lesson, and Robotics, fostering creativity and holistic development.',
+      color: 'bg-purple-500',
+    },
   ];
 
   return (
@@ -31,12 +43,12 @@ const Academics = () => {
             Academic Excellence
           </h2>
           <p className="text-lg font-fredoka text-gray-600 max-w-3xl mx-auto">
-            Our comprehensive curriculum is designed to challenge and inspire students 
+            Our comprehensive curriculum is designed to nurture and inspire students 
             while providing the foundation for lifelong learning and success.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto justify-items-center">
           {programs.map((program, index) => (
             <div
               key={index}
